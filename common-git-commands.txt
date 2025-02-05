@@ -1,0 +1,15 @@
+git config --global user.name "用户名"	//1、设置当前修改人的用户名
+git config --global user.email "邮箱地址"	//2、设置当前修改人的邮箱地址
+git config --global user.name			//3、查看当前修改人的用户名
+git config --global user.email			//4、查看当前修改人的邮箱地址
+git init				//5、将当前文件夹变成git仓库
+git status				//6、查看当前状态，包括当前文件夹所处仓库是否有修改、是否将缓存区的东西放入仓库
+git add 文件名1 文件名2 文件名3		//7、将修改后的文件放入缓存区
+git add .				//8、将整个文件夹放入缓存区
+git commit -m"注释内容"	//9、将缓存区内容放入仓库，记住一定要写注释内容
+git log				//10、显示仓库的修改日志（会完整显示版本号、修改人、修改时间、注释内容等）
+git log --pretty=oneline	//11、在一行内简洁显示修改日志
+git reset --hard 版本号	//12、将当前仓库回退到版本号所处的状态，日志也会对应修改
+git reflog				//13、查看历史纪录，包括回退记录
+
+//14、git兼容控制台的文件命令，包括cd和mkdir，所有可以正常使用
