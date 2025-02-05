@@ -22,3 +22,5 @@ git pull				//17、拉取线上仓库
 //若没有用科学上网，push和pull操作有时会失败，请多次尝试
 
 //在每天工作的第一件事就是先git pull拉取线上最新的版本；每天下班前要做的是git push，将本地代码提交到线上仓库。
+
+//对了，别忘记设置token，详细去这个网页里面设置：https://github.com/hide-self/simple-git-commands
