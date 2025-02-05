@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            position: relative;
+            background-color: rgb(224, 226, 226);
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            margin: 200px auto;
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+        .box a{
+            position: absolute;
+            left: 41px;
+            top: 3px;
+            text-decoration: none;
+            color: rgb(130, 132, 131);
+        }
+        .box .triangle{
+            position: absolute;
+            bottom: 0;
+            right: 20px;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            /* border-bottom: 10px solid green; */
+            transition: border-bottom-color 0.5s ease 0.1s;
+        }
+        .pop{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-70%);
+            width: 500px;
+            height: 600px;
+            background-color: green;
+            opacity: 0;
+            transition:opacity 0.5s ease 0.1s;
+        }
+        .box:hover .triangle{
+            border-bottom-color: green;
+        }
+        .box:hover+.pop{
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <a href="#">手机京东</a>
+        <div class="triangle"></div>
+    </div>
+    <div class="pop"></div>
+</body>
+</html>
