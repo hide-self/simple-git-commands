@@ -1,1 +1,2 @@
 ignoreTest/*.js
+!ignoreTest/hello.txt
