@@ -1,4 +1,4 @@
 # 井号表示注释内容
-/ignoreTest/*.js
-/ignoreTest/!hello2.js
-/ignoreTest/!hello.txt
+/ignoreTest/*.js/
+/ignoreTest/!hello2.js/
+/ignoreTest/!hello.txt/
